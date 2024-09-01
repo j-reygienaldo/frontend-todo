@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# Todo Apps - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Created using Vite + React.js + Tailwind CSS
 
-Currently, two official plugins are available:
+> How to run
+>
+> 1. Install the package using `yarn` or `npm install`
+> 2. `yarn dev` or `npm run dev` to start the apps
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Created using Node v18.19.1
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Login/register using email (need to connect to backend from another repo)
+2. Add, edit (mark as done/undone), delete Todo
+3. Search Todo
 
-- Configure the top-level `parserOptions` property like this:
+## Minimum feature
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [x] Add, Edit, Delete Task/Todo
+- [x] Mark a task/todo is done/completed
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Another feature
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- [x] Using animation (maybe when mark/delete/edit or insert data)
+- [x] Using search bar for find specific task/todo
+- [x] Get data from public API (its probably a time, weather or location or anything else)
+- [] Add Unit Testing
+- [] Using Design Pattern
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Screenshot
+
+### Register
+
+![Alt text](/screenshot/register.png?raw=true "Register")
+
+### Login
+
+![Alt text](/screenshot/Login.png?raw=true "Login")
+
+### Home
+
+![Alt text](/screenshot/home.png?raw=true "Home")
