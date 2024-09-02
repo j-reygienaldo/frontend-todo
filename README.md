@@ -36,7 +36,7 @@
 
 ### Login
 
-![Alt text](/screenshot/Login.png?raw=true "Login")
+![Alt text](/screenshot/login.png?raw=true "Login")
 
 ### Home
 
